@@ -1,0 +1,68 @@
+<html>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+
+<head>
+
+
+</head>
+
+<body>
+   <center>
+    <style>
+        body {
+          background-color: #DBF9FC;
+          background-repeat: no-repeat;
+
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        </style>
+
+<form method="POST" action="/home">
+
+  <label for="Stream"><b>Stream</b></label><br>
+  <select name="Stream" >
+      <option value="0">Computer Science</option>
+      <option value="1">Information Technology</option>
+      <option value="2">Mechanical</option>
+      <option value="3">Electronics And Communication</option>
+      <option value="4">Electrical </option>
+      <option value="5">Civil </option>
+    </select><br>
+
+    <label for="Gender" ><b>Gender</b></label><br>
+    <select name="Gender" >
+        <option value="1">Male</option>
+        <option value="2">Female</option>
+      </select><br>
+
+      <label for="Hostel"><b>Hostel</b></label><br>
+      <select name="Hostel" >
+          <option value="0">Yes</option>
+          <option value="1">No</option>
+        </select><br>
+
+    <label for="Age"><b>Age</b></label><br>
+    <input type="text" name="Age"><br>
+
+    <label for="Internships"><b>Internships</b></label><br>
+    <input type="text" name="Internships"><br>
+
+    <label for="CGPA"><b>CGPA</b></label><br>
+    <input type="text" name="CGPA"><br>
+
+    <label for="Backlogs"><b>Backlogs</b></label></label><br>
+    <input type="text" name="Backlogs"><br><br><br>
+
+    <input type="submit" value="submit">
+
+
+    </form>
+    <h1>The Student Placement Status: <b style="color:Purple">{{predict}}</b></h1>
+
+   </center>
+</body></html>
